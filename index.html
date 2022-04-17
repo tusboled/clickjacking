@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>0xpoc | ClickJacking</title>
+    <meta name="description" content="Clickjacking">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="clickjacking.js"></script>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+        
+        body {
+            background-image: url(img/bg.png);
+            font-family: 'Quicksand';
+            padding: 0;
+            margin: 0;
+        }
+        
+        .back {
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1><font color="#fff">CLICKJACKING VULNERABILITY</font></h1>
+    <label><font color="#fff">Target :</font></label>
+    <input id="url" type="text" placeholder="Target URL"></input>
+    <button id="submit-test">Exploit!</button><br><br>
+    <iframe src="about:blank" id="iframe" width="800px" height="600px"></iframe>
+</center>
+</body>
+</html>
